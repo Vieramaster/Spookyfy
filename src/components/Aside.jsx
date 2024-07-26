@@ -11,19 +11,19 @@ export default function Aside() {
         <AsideButton
           name={"Home"}
           height={"h-1/2"}
-          svg={<IcoHome width={"1.5rem"} />}
+          svg={<IcoHome value={"1.5rem"} />}
         />
         <AsideButton
           name={"Search"}
           height={"h-1/2"}
-          svg={<IcoSearch width={"1.5rem"} />}
+          svg={<IcoSearch value={"1.5rem"} />}
         />
       </div>
       <div className="w-full h-[calc(100%-100px)] bg-slate-400 rounded-xl flex flex-col gap-2 items-center">
         <AsideButton
           name={"Search"}
           height={"h-[50px]"}
-          svg={<IcoLibrary width={"1.5rem"} />}
+          svg={<IcoLibrary value={"1.5rem"} />}
         />
         <LibraryButton />
       </div>
