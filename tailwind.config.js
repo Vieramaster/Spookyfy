@@ -11,6 +11,7 @@ export default {
         "background-tinted-press": "hsla(0,0%,100%,.05)",
         "text-base": "#fff",
         "text-sub": "#b3b3b3",
+        "green": "#1ed760",
       },
     },
   },

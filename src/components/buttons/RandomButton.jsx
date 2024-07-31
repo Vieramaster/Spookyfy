@@ -4,8 +4,9 @@ export default function RandomButton() {
   return (
     <button className="text-text-sub hover:text-text-base">
       <IcoRandom
-        fill={"fill-text-sub hover:fill-text-base "}
-        value={"1rem"}
+        className={
+          "w-4 h-4 fill-text-sub hover:fill-text-base ease-in-out duration-200"
+        }
       />
     </button>
   );

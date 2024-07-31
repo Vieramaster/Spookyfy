@@ -1,29 +1,29 @@
-import AsideButton from "./AsideButton";
-import IcoHome from "../icons/IcoHome";
-import IcoSearch from "../icons/IcoSearch";
-import IcoLibrary from "../icons/IcoLibrary";
-import LibraryButton from "./LibraryButton";
+import AsideButton from "./buttons/AsideButton";
+import IcoHome from "./icons/IcoHome";
+import IcoSearch from "./icons/IcoSearch";
+import IcoLibrary from "./icons/IcoLibrary";
+import LibraryButton from "./buttons/LibraryButton";
 
 export default function Aside() {
   return (
-    <section className=" [grid-area:aside] bg-green-900 rounded-lg flex flex-col gap-2 ">
-      <div className="w-full h-[120px] p-2 bg-slate-400 rounded-lg">
+    <section className=" [grid-area:aside]  rounded-lg flex flex-col gap-2 ">
+      <div className="w-full h-[120px] p-2 bg-background-base rounded-lg">
         <AsideButton
           name={"Home"}
           height={"h-1/2"}
-          svg={<IcoHome value={"1.5rem"} />}
+          svg={<IcoHome className={"w-6 h-6  "} />}
         />
         <AsideButton
           name={"Search"}
           height={"h-1/2"}
-          svg={<IcoSearch value={"1.5rem"} />}
+          svg={<IcoSearch className={"w-6 h-6"} />}
         />
       </div>
-      <div className="w-full h-[calc(100%-100px)] bg-slate-400 rounded-xl flex flex-col gap-2 items-center">
+      <div className="w-full h-[calc(100%-100px)] bg-background-base p-2 rounded-lg">
         <AsideButton
-          name={"Search"}
+          name={"Library"}
           height={"h-[50px]"}
-          svg={<IcoLibrary value={"1.5rem"} />}
+          svg={<IcoLibrary className={"w-6 h-6"} />}
         />
         <LibraryButton />
       </div>

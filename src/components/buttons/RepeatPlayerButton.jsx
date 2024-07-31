@@ -4,8 +4,9 @@ export default function RepeatPlayerButton() {
   return (
     <button>
       <ICoRepeatPlayer
-        fill={"fill-text-sub hover:fill-text-base "}
-        value={"1rem"}
+        className={
+          "w-4 h-4 fill-text-sub hover:fill-text-base ease-in-out duration-200"
+        }
       />
     </button>
   );
