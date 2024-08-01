@@ -1,7 +1,14 @@
 import MainPlaylist from "./MainPlaylist";
+import MainFooter from "./MainFooter";
 
 export default function MainHome() {
   const list = [
+    {
+      alt: "titulo",
+      image: "./images/Foto.jfif",
+      mainTitle: "Artist",
+      audioTitle: "Artist Song",
+    },
     {
       alt: "titulo",
       image: "./images/Foto.jfif",
@@ -60,6 +67,19 @@ export default function MainHome() {
         playList={list}
         ImageCircular={false}
       />
+      <MainPlaylist
+        title={"Featured list"}
+        subTitle={"Show everything"}
+        playList={list}
+        ImageCircular={false}
+      />
+      <MainPlaylist
+        title={"Spotify playlist"}
+        subTitle={"Show everything"}
+        playList={list}
+        ImageCircular={false}
+      />
+      <MainFooter />
     </div>
   );
 }

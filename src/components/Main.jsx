@@ -5,7 +5,7 @@ export default function Main() {
   return (
     <section className="[grid-area:main] bg-background-base rounded-xl overflow-auto">
       <MainHeader />
-      <MainHome/>
+      <MainHome />
     </section>
   );
 }

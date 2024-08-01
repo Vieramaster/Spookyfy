@@ -29,11 +29,11 @@ export default function MainPlaylist({
             audioTitle={item.audioTitle}
             roundedImage={rounded}
             className={`${
-              index === 4
+              index === 3
                 ? "hidden lg:flex"
-                : index === 5
+                : index === 4
                 ? "hidden xl:flex"
-                : index === 6
+                : index >= 5
                 ? "hidden 2xl:flex"
                 : ""
             }`}
